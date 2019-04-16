@@ -179,13 +179,12 @@ def team_names
      team_data.each do |attribute, data|
        binding.pry
      if attribute == :team_name
-  
         team_arr << data
           end
       end
 
     end
-  end
+  
   team_arr
 end
 
