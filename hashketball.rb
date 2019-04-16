@@ -178,7 +178,8 @@ def team_names
    game_hash.each do |location, team_data|
      team_data.each do |attribute, data|
      if attribute == :team_name
-       team_arr << data
+       binding.pry
+        team_arr << data
           end
       end
 
