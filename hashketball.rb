@@ -200,7 +200,22 @@ def team_names
   
   team_arr
 end
+def player_numbers (team)
+  size=0
+   game_hash.each do |location, team_data|
+     team_data.each do |attribute, data|
+      if attribute == :team_name
+        data.each do |kname, stats|
+            if kname == name 
+              size = data[name][:shoe]
+            end
+          end
+      end
 
+    end
+  end
+  size
+end
 
 
 
