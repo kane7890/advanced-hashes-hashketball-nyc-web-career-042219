@@ -201,18 +201,18 @@ def team_names
   team_arr
 end
 def player_numbers (team)
-  size=0
+  jers_numb_arr=[]
    game_hash.each do |location, team_data|
       if team_data[:team_name] == team
-          team_data[:players] do |pname, 
+          team_data[:players] do |pname, stats|
+            jers_numb_arr << stats[:number]
             end
           end
       end
 
-    end
+    jers_numb_arr
   end
-  size
-end
+ 
 
 
 
