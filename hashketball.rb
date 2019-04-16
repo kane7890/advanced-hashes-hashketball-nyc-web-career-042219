@@ -206,6 +206,7 @@ def player_numbers (team)
       if team_data[:team_name] == team
           team_data[:players] do |pname, stats|
             jers_numb_arr << stats[:number]
+            binding.pry
             end
           end
       end
