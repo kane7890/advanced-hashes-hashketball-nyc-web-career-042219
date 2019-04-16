@@ -174,7 +174,7 @@ def shoe_size (name)
 end
 
 def team_names
-  team_arr=[]
+#  team_arr=[]
    game_hash.each do |location, team_data|
      team_data.each do |attribute, data|
        binding.pry
