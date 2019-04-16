@@ -225,6 +225,6 @@ def player_stats (name)
      end
 
     end
-    binding.pry
+ #   binding.pry
     statbox
 end
