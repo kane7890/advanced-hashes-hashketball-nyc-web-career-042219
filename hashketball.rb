@@ -154,7 +154,7 @@ def num_points_scored (name)
   pts
 end
 
-def num_points_scored (name)
+def shoe_size (name)
   pts=0
    game_hash.each do |location, team_data|
      team_data.each do |attribute, data|
