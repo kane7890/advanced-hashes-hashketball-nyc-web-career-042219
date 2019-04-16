@@ -216,9 +216,10 @@ def player_numbers (team)
 def player_stats (name)
   statbox={}
    game_hash.each do |location, team_data|
+     binding.pry
     team_data[:players].each do |pname, stats|
        if pname == name 
-         binding.pry
+  #       binding.pry
           statbox = stats
         end
       end
