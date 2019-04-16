@@ -214,7 +214,7 @@ def player_numbers (team)
   end
   
 def player_stats (name)
-  
+  statbox={}
    game_hash.each do |location, team_data|
      team_data[:players].each do |pname, stats|
         if pname == name 
