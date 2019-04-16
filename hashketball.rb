@@ -177,7 +177,7 @@ def team_colors (team)
      team_data.each do |attribute, data|
   #     binding.pry
      if attribute == :colors
-        team_arr << data
+          color=data
           end
       end
 
