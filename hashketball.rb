@@ -220,6 +220,7 @@ def player_stats (name)
         if pname == name 
  #         binding.pry
           statbox = stats
+        
         end
      end
 
