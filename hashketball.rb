@@ -212,13 +212,16 @@ def player_numbers (team)
       end
     jers_numb_arr
   end
- 
+  
+def player_stats (name)
+  
+   game_hash.each do |location, team_data|
+     team_data[:players].each do |pname, stats|
+        if pname == name 
+          statbox = stats
+        end
+     end
 
-
-
-
-
-
-
-
-
+    end
+    statbox
+end
