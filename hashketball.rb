@@ -173,6 +173,19 @@ def shoe_size (name)
   size
 end
 
+def team_names
+  team_arr=[]
+   game_hash.each do |location, team_data|
+     team_data.each do |attribute, data|
+     if attribute == :team
+       team_arr 
+          end
+      end
+
+    end
+  end
+  size
+end
 
 
 
