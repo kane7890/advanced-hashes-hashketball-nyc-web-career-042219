@@ -203,8 +203,9 @@ end
 def player_numbers (team)
   jers_numb_arr=[]
    game_hash.each do |location, team_data|
-     binding.pry
+ #    binding.pry
       if team_data[:team_name] == team
+        binding.pry
           team_data[:players] do |pname, stats|
             jers_numb_arr << stats[:number]
            end
