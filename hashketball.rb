@@ -203,11 +203,8 @@ end
 def player_numbers (team)
   size=0
    game_hash.each do |location, team_data|
-     team_data.each do |attribute, data|
-      if attribute == :team_name
-        data.each do |kname, stats|
-            if kname == name 
-              size = data[name][:shoe]
+      if team_data[:team_name] == team
+          team_data[:players] do |pname, 
             end
           end
       end
