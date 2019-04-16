@@ -223,7 +223,7 @@ def player_stats (name)
   #      end
   #   end
     binding.pry
-    statbox = team_data[:players][name]
+    statbox = team_data[:players][:name]
     end
  #   binding.pry
     statbox
