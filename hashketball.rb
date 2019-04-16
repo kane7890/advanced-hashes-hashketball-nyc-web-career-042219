@@ -222,7 +222,7 @@ def player_stats (name)
        if pname == name 
   #       binding.pry
           statbox = stats
-``    end
+       end
      end
    # binding.pry
    # statbox = team_data[:players][:name]
