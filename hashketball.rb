@@ -222,6 +222,7 @@ def player_stats (name)
   #        statbox = stats
   #      end
   #   end
+    binding.pry
     statbox = team_data[:players][name]
     end
  #   binding.pry
