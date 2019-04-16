@@ -147,17 +147,32 @@ def num_points_scored (name)
               pts = data[name][:points]
             end
           end
-          
-      #  binding.pry
       end
-# binding.pry
+
     end
   end
-  binding.pry
   pts
 end
 
-num_points_scored("Alan Anderson")
+def num_points_scored (name)
+  pts=0
+   game_hash.each do |location, team_data|
+     team_data.each do |attribute, data|
+      # binding.pry
+        #are you ABSOLUTELY SURE what 'attribute' and 'team data' are? use binding.pry to find out!
+      if attribute == :players
+        data.each do |kname, stats|
+            if kname == name 
+              pts = data[name][:points]
+            end
+          end
+      end
+
+    end
+  end
+  pts
+end
+
 
 
 
