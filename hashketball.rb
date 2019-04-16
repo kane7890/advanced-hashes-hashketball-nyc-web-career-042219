@@ -230,3 +230,17 @@ def player_stats (name)
  #   binding.pry
     statbox
 end
+
+def big_shoe_rebounds
+  maxsize=0
+  maxreb =0
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |pname, stats|
+      if stats[:shoe] > maxsize
+          maxsize=stats[:shoe]
+          maxreb=stats[:rebounds]
+        end
+      end
+    end
+    maxreb
+  end
