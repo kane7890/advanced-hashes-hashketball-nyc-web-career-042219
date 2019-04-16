@@ -177,14 +177,14 @@ def team_names
   team_arr=[]
    game_hash.each do |location, team_data|
      team_data.each do |attribute, data|
-     if attribute == :team
-       team_arr 
+     if attribute == :team_name
+       team_arr << data
           end
       end
 
     end
   end
-  size
+  team_arr
 end
 
 
