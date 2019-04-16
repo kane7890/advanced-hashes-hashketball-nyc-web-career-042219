@@ -210,7 +210,6 @@ def player_numbers (team)
            end
           end
       end
-
     jers_numb_arr
   end
  
